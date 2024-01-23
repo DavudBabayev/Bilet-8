@@ -1,0 +1,53 @@
+.section3{
+    width: 100%;
+    padding: 50px 0;
+    .sec3con{
+        width: 100%;
+        @include betw;
+        .image{
+            width: 50%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .text{
+            @include center;
+            flex-direction: column;
+            gap: 40px;
+            p{
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+            h1{
+                font-size: 80px;
+                color: white;
+                background-color: black;
+            }
+            button{
+                font-size: 16px;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                &:hover{
+                    background-color: gray;
+                    border-color: gray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section3{
+        .sec3con{
+            flex-direction: column;
+            gap: 50px;
+            .image{
+                width: 100%;
+            }
+        }
+    }
+}

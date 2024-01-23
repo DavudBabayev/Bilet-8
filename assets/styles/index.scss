@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    margin: auto;
+    padding: 0 32px;
+    max-width: 1300px;
+}
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin betw{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+@import "nav";
+@import "menu";
+@import "add";
+@import "section1";
+@import "section2";
+@import "section2det";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "footer";
